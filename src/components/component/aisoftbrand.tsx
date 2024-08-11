@@ -18,6 +18,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
@@ -27,9 +28,9 @@ export function aisoftbrand() {
     <div className="flex flex-col min-h-dvh">
       <div className="bg-gradient-to-r from-primary to-secondary py-2 text-primary-foreground">
         <div className="container flex items-center justify-center">
-          <marquee className="text-sm font-medium">
+          <div className="text-sm font-medium marquee-text">
             Free shipping on all orders over $50 | 30-day money back guarantee
-          </marquee>
+          </div>
         </div>
       </div>
       <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-sm">
@@ -87,7 +88,7 @@ export function aisoftbrand() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6 lg:grid-cols-3 lg:gap-16">
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -105,7 +106,7 @@ export function aisoftbrand() {
               </CardContent>
             </Card>
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -123,7 +124,7 @@ export function aisoftbrand() {
               </CardContent>
             </Card>
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -145,7 +146,7 @@ export function aisoftbrand() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6 lg:grid-cols-3 lg:gap-16">
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -163,7 +164,7 @@ export function aisoftbrand() {
               </CardContent>
             </Card>
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -181,7 +182,7 @@ export function aisoftbrand() {
               </CardContent>
             </Card>
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -203,7 +204,7 @@ export function aisoftbrand() {
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container grid grid-cols-1 gap-8 px-4 md:grid-cols-2 md:gap-12 md:px-6 lg:grid-cols-3 lg:gap-16">
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -219,7 +220,7 @@ export function aisoftbrand() {
               </CardContent>
             </Card>
             <Card className="group relative overflow-hidden rounded-xl">
-              <img
+              <Image
                 src="/placeholder.svg"
                 width="400"
                 height="300"
@@ -269,7 +270,7 @@ export function aisoftbrand() {
   )
 }
 
-function MountainIcon(props) {
+function MountainIcon(props : any) {
   return (
     <svg
       {...props}
@@ -289,7 +290,7 @@ function MountainIcon(props) {
 }
 
 
-function PhoneIcon(props) {
+function PhoneIcon(props : any) {
   return (
     <svg
       {...props}

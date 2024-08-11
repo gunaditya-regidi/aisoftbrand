@@ -15,6 +15,16 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.marquee-text {
+  white-space: nowrap;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
 
 body {
   color: rgb(var(--foreground-rgb));
